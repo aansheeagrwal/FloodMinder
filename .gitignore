@@ -1,26 +1,53 @@
-# Python cache files
+# -------------------------------
+# Python cache and compiled files
+# -------------------------------
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
 
-# Virtual environment
+# -------------------------------
+# Virtual environments
+# -------------------------------
 venv/
 env/
+ENV/
+.env/
 
-# PyCharm project files
+# -------------------------------
+# PyCharm files
+# -------------------------------
 .idea/
 *.iml
+*.iws
+*.ipr
 
+# -------------------------------
+# Jupyter Notebook checkpoints
+# -------------------------------
+.ipynb_checkpoints/
+
+# -------------------------------
 # OS files
+# -------------------------------
 .DS_Store
 Thumbs.db
 
+# -------------------------------
 # Logs
+# -------------------------------
 *.log
 
-# Environment variables
-.env
+# -------------------------------
+# Data files (optional: ignore large datasets if needed)
+# -------------------------------
+*.csv
+*.pickle
+*.h5
+*.db
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
+# -------------------------------
+# Others
+# -------------------------------
+*.bak
+*.swp
+*.tmp
