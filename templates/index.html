@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FloodML</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicons -->
+    <link
+      href="{{ url_for('static', filename='img/favicon-2.png') }}"
+      rel="icon"
+    />
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS File -->
+    <link
+      href="{{ url_for('static', filename='lib/bootstrap/css/bootstrap.min.css') }}"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries CSS Files -->
+    <link
+      href="{{ url_for('static', filename='lib/font-awesome/css/font-awesome.min.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='lib/animate/animate.min.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='lib/ionicons/css/ionicons.min.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='lib/lightbox/css/lightbox.min.css') }}"
+      rel="stylesheet"
+    />
+
+    <!-- Main Stylesheet File -->
+    <link
+      href="{{ url_for('static', filename='css/style.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="header" style="background-color: #e8f0f8;">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <a href="#header">
+            <img
+              src="{{ url_for('static', filename='img/logo.png') }}"
+              alt="FloodML Logo"
+              style="max-height: 60px;"
+              class="img-fluid"
+            />
+          </a>
+        </div>
+
+        <nav class="main-nav d-none d-lg-block">
+          <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="plots.html">Plots</a></li>
+            <li><a href="heatmaps.html">Heatmaps</a></li>
+            <li><a href="satellite.html">Satellite</a></li>
+            <li><a href="predicts.html">Predict</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Intro Section -->
+    <section id="intro" class="clearfix">
+      <div class="container d-flex h-100">
+        <div class="row justify-content-center align-self-center">
+          <div class="col-md-5 intro-info order-md-first order-last" style="background-color: transparent;padding-right:50px;">
+            <a href="#header" class="scrollto">
+              <img
+                src="{{ url_for('static', filename='img/logo.png') }}"
+                alt="FloodML Logo"
+                class="img-fluid"
+                style="max-height: 150px; margin-top: 0px;"
+              />
+            </a>
+            <h3 style="padding-top:30px;padding-left:10px;line-height: 40px;">
+              🌊 Real-Time Flood Alerts for Safer Communities
+            </h3>
+            <br />
+            <div style="padding-left:10px;">
+              <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            </div>
+          </div>
+
+          <div class="col-md-7 intro-img order-md-last order-first" style="background-color: transparent;">
+            <img
+              src="{{ url_for('static', filename='img/er.png') }}"
+              alt="Intro Image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main -->
+    <main id="main">
+      <!-- About Us Section -->
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-md-6">
+              <div class="about-img">
+                <img
+                  src="{{ url_for('static', filename='img/images.jpg') }}"
+                  alt="FloodML Overview"
+                />
+              </div>
+            </div>
+
+            <div class="col-lg-7 col-md-6">
+              <div class="about-content">
+                <h2>About FloodML</h2>
+                <h3>
+                  Empowering communities and authorities to stay ahead of floods with actionable insights.
+                </h3>
+                <p>
+                  Floods are among the most destructive and frequent natural disasters worldwide.
+                </p>
+                <p>
+                  Each year, floods claim thousands of lives and displace millions. Regions in India and China's Yellow River Valley often witness some of the most severe floods in history.
+                </p>
+                <p>
+                  FloodML predicts flood events and their potential impact in advance, presenting the information through interactive visualizations that are clear and easy to understand.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="section-bg">
+        <div class="container">
+          <header class="section-header">
+            <h3>Our Services</h3>
+            <p>
+              Tools and insights to help communities stay flood-ready and assist authorities in effective planning and resource allocation.
+            </p>
+          </header>
+
+          <div class="row">
+            <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-duration="1.4s">
+              <div class="box" style="height: 320px;">
+                <div class="icon" style="background: #fceef3;">
+                  <i class="ion-ios-analytics-outline" style="color: #ff689b;"></i>
+                </div>
+                <h4 class="title"><a href="plots.html">Flood Plots</a></h4>
+                <p class="description">
+                  Detailed visualizations of flood forecasts, rainfall patterns, and possible damage zones.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-duration="1.4s">
+              <div class="box" style="height: 320px;">
+                <div class="icon" style="background: #fff0da;">
+                  <i class="ion-ios-bookmarks-outline" style="color: #e98e06;"></i>
+                </div>
+                <h4 class="title"><a href="heatmaps.html">Flood Heatmaps</a></h4>
+                <p class="description">
+                  Interactive heatmaps showing live flood conditions across multiple regions.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+              <div class="box" style="height: 320px;">
+                <div class="icon" style="background: #eafde7;">
+                  <i class="ion-ios-speedometer-outline" style="color: #41cf2e;"></i>
+                </div>
+                <h4 class="title"><a href="satellite.html">Satellite Data</a></h4>
+                <p class="description">
+                  Geospatial visualizations of flood-prone areas using NASA's GPM project datasets.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+              <div class="box" style="height: 320px;">
+                <div class="icon" style="background: #e6fdfc;">
+                  <i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i>
+                </div>
+                <h4 class="title"><a href="predicts.html">AI Flood Prediction</a></h4>
+                <p class="description">
+                  Forecast upcoming floods in real-time with our advanced machine learning algorithm.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section id="faq">
+        <div class="container">
+          <header class="section-header">
+            <h3>Frequently Asked Questions</h3>
+          </header>
+
+          <ul id="faq-list" class="wow fadeInUp">
+            <li>
+              <a data-toggle="collapse" class="collapsed" href="#faq1">
+                Why FloodML? <i class="ion-android-remove"></i>
+              </a>
+              <div id="faq1" class="collapse" data-parent="#faq-list">
+                <p>
+                  Over 80% of India's population, approximately 1.08 billion people, are at risk from floods. They cause nearly $15 billion in losses annually. FloodML provides early warning solutions to mitigate these risks.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <a data-toggle="collapse" href="#faq2" class="collapsed">
+                How it works <i class="ion-android-remove"></i>
+              </a>
+              <div id="faq2" class="collapse" data-parent="#faq-list">
+                <p>
+                  <b>Data Sources:</b> Scraped flood data from floodlist.com and historical weather via Visual Crossing API. <br><br>
+                  <b>ML Model:</b> Random Forest classifier with 98.71% accuracy.<br><br>
+                  <b>Visualization:</b> Plots generated using Plotly and satellite imagery.<br><br>
+                  <b>Frontend:</b> Developed using Flask with responsive HTML/CSS templates.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <a data-toggle="collapse" href="#faq3" class="collapsed">
+                Achievements <i class="ion-android-remove"></i>
+              </a>
+              <div id="faq3" class="collapse" data-parent="#faq-list">
+                <p>
+                  - Built one of India's most comprehensive flood datasets.<br>
+                  - High-accuracy ML model for prediction.<br>
+                  - Clean, interactive visualizations for easy interpretation.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="section-bg" style="background-color: #f0f4fa;">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="footer-info">
+                <a href="index.html">
+                  <img
+                    src="{{ url_for('static', filename='img/logo.png') }}"
+                    alt="FloodML Logo"
+                    style="max-height: 100px;"
+                    class="img-fluid"
+                  />
+                </a>
+                <p style="padding-top:20px;">
+                  FloodML leverages AI and visual analytics to predict floods and visualize potential impact zones effectively.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="form">
+                <h4>Send us a message</h4>
+                <form action="" method="post" role="form" class="contactForm">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      data-rule="minlen:4"
+                      data-msg="Please enter at least 4 chars"
+                    />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      data-rule="email"
+                      data-msg="Please enter a valid email"
+                    />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="subject"
+                      id="subject"
+                      placeholder="Subject"
+                      data-rule="minlen:4"
+                      data-msg="Please enter at least 8 chars of subject"
+                    />
+                    <div class="validation"></div>
+                  </div>
+                  <div id="sendmessage">Your message has been sent. Thank you!</div>
+                  <div id="errormessage"></div>
+                  <div class="text-center">
+                    <button type="submit" title="Send Message">Send Message</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="{{ url_for('static', filename='lib/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/jquery/jquery-migrate.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/mobile-nav/mobile-nav.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/wow/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/counterup/counterup.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/isotope/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/lightbox/js/lightbox.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='contactform/contactform.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>

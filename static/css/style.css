@@ -1,0 +1,219 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  background: #fefefe;
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: #FF6F61; /* Updated color */
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #e65550; /* darker shade */
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+
+/*--------------------------------------------------------------
+# Back to Top Button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #FF6F61; /* updated */
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.3s ease;
+  z-index: 11;
+}
+.back-to-top:hover {
+  background: #e65550;
+}
+.back-to-top i {
+  padding-top: 12px;
+}
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+#topbar .social-links a {
+  color: #535074;
+  padding: 4px 12px;
+  display: inline-block;
+  transition: color 0.3s;
+}
+#topbar .social-links a:hover {
+  color: #FF6F61;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 110px;
+  padding: 20px 0;
+  position: fixed;
+  left: 0; top: 0; right: 0;
+  background: #fff;
+  z-index: 997;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 30px rgba(127,137,161,0.1);
+}
+#header.header-scrolled,
+#header.header-pages {
+  height: 70px;
+  padding: 15px 0;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+#header .logo h1 {
+  font-size: 32px;
+  color: #413e66;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+#intro {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#intro h2 {
+  color: #413e66;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+#intro h2 span {
+  color: #FF6F61; /* updated */
+}
+#intro .btn-get-started,
+#intro .btn-services {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  border-radius: 4px;
+  transition: all 0.3s;
+  background: #FF6F61; /* updated */
+  color: #fff;
+}
+#intro .btn-get-started:hover,
+#intro .btn-services:hover {
+  background: #e65550;
+}
+
+/*--------------------------------------------------------------
+# Sections Header
+--------------------------------------------------------------*/
+.section-header h3 {
+  font-size: 36px;
+  color: #413e66;
+  text-align: center;
+  font-weight: 700;
+}
+.section-header p {
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 50px;
+  color: #696592;
+  width: 60%;
+}
+
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+#services .box {
+  padding: 25px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(68,88,144,0.08);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+#services .box:hover {
+  transform: scale(1.05);
+}
+#services .icon {
+  width: 60px; height: 60px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: #FF6F61; /* updated */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  font-size: 14px;
+  background: #fff;
+  color: #535074;
+}
+#footer .footer-top {
+  padding: 60px 0 30px;
+  background: #f5f8fd;
+}
+#footer .footer-top .footer-info h3 {
+  color: #413e66;
+  font-weight: 700;
+}
+#footer .footer-top .footer-links ul a {
+  color: #696592;
+  transition: color 0.3s;
+}
+#footer .footer-top .footer-links ul a:hover {
+  color: #FF6F61; /* updated */
+}
+
+/*--------------------------------------------------------------
+# Responsive
+--------------------------------------------------------------*/
+@media (max-width: 991px) {
+  #header .logo h1 { font-size: 28px; }
+  #intro h2 { font-size: 34px; }
+}
+@media (max-width: 767px) {
+  #intro { padding: 80px 20px; height: auto; }
+}
