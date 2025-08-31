@@ -15,6 +15,34 @@
 Currently under deployment. Link will be updated soon.
 
 ---
+## ** Screenshots/Images
+<img width="936" height="442" alt="contact page" src="https://github.com/user-attachments/assets/bf94697f-77b1-42d9-ae7f-b81ba47d5127" />
+
+<img width="929" height="431" alt="Front page" src="https://github.com/user-attachments/assets/a4d78476-ec62-4857-bd1e-69fac4502730" />
+
+<img width="941" height="426" alt="interactive heatmap anlysis image" src="https://github.com/user-attachments/assets/fe5a4cfa-101e-4679-b497-25249bc5c4fc" />
+
+<img width="934" height="399" alt="Flood Prediction image" src="https://github.com/user-attachments/assets/14481584-fbff-4cb5-a548-847a63d84950" />
+
+<img width="944" height="444" alt="plot damage analysis image" src="https://github.com/user-attachments/assets/6a6109d6-a209-4e09-a59d-92896b525378" />
+
+<img width="936" height="428" alt="Flood image final" src="https://github.com/user-attachments/assets/057b429f-f7d7-4009-95c4-f56d84929b0b" />
+
+<img width="944" height="433" alt="Plots page" src="https://github.com/user-attachments/assets/1f62c0d2-83b6-4014-99d9-2b214c13523e" />
+
+
+
+<img width="950" height="440" alt="cover page" src="https://github.com/user-attachments/assets/360a34ba-1e10-4161-aa08-8a08f204168d" />
+
+---
+
+## **🌐 Demo Video**
+
+
+https://github.com/user-attachments/assets/8f58a072-3ab8-4016-a7af-7eacea1b0d88
+
+
+---
 
 ## **Features**
 
